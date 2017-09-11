@@ -1,0 +1,163 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Quureo</ion-title>
+
+    <ion-buttons end>
+      <ion-icon name="search" class="navbar-icon"></ion-icon>
+      <ion-icon name="ios-notifications" class="navbar-icon"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+
+  <ion-segment class="segment-style" [(ngModel)]="type" color="primary" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="published">
+      Published
+    </ion-segment-button>
+    <ion-segment-button value="draft">
+      Draft
+    </ion-segment-button>
+  </ion-segment>
+
+
+  <div (click)="gotoMyPostDetail();">
+    <ion-card class="card-style">
+      <ion-item text-wrap>
+
+          <img item-left src="assets/image/real-estate-detailed-image-3.jpg" style="width:30vw; height:25vw;"/>
+          <ion-item style="padding:0;">
+            <ion-avatar item-left>
+              <img src="assets/image/thumbnail-rotla.png" class="avatar-style"/>
+            </ion-avatar>
+
+            <p style="color:black;">John Doe</p>
+            <div item-right class="time-location-style">
+              <p class="p-card-style">2m ago</p>
+              <ion-icon name="md-home" style="color:lightgray; font-size:20px; margin-left:10px;"></ion-icon>
+            </div>
+
+          </ion-item>
+          <span style="font-size:4.5vw;">
+            There are many variations of Pasasges of Lorem available
+          </span>
+      </ion-item>
+      <ion-item style="min-height: 20px !important;">
+        <p item-left class="p-card-style">Category1</p>
+        <p item-right class="p-card-style" style="margin-right:17px; color:#00a5eb;" *ngIf="type=='published'">Pending admin approval</p>
+      </ion-item>
+
+      <div class="separate"></div>
+
+      <div class="follow-comment-style" *ngIf="type=='published'">
+        <ion-icon name="md-create" style="margin-right:2vw;"></ion-icon>
+        <p style="margin-left:2vw;">Edit</p>
+      </div>
+
+      <div class="follow-comment-style" *ngIf="type=='draft'">
+        <img src="assets/image/quuero.png" style="width:20px;"/>
+        <p style="margin-left:2vw;">Publish</p>
+      </div>
+    </ion-card>
+  </div>
+
+
+  <div (click)="gotoMyPostDetail();">
+    <ion-card class="card-style">
+      <ion-item text-wrap>
+
+          <img item-left src="assets/image/real-estate-detailed-image-4.jpg" style="width:30vw; height:25vw;"/>
+          <ion-item style="padding:0;">
+            <ion-avatar item-left>
+              <img src="assets/image/thumbnail-rotla.png" class="avatar-style"/>
+            </ion-avatar>
+
+            <p style="color:black;">John Doe</p>
+            <div item-right class="time-location-style">
+              <p class="p-card-style">2m ago</p>
+              <ion-icon name="md-home" style="color:lightgray; font-size:20px; margin-left:10px;"></ion-icon>
+            </div>
+
+          </ion-item>
+          <span style="font-size:4.5vw;">
+            There are many variations of Pasasges of Lorem available
+          </span>
+      </ion-item>
+      <ion-item style="min-height: 20px !important;">
+        <p item-left class="p-card-style">Category1</p>
+        <p item-right class="p-card-style" style="margin-right:17px;">5 Images</p>
+        <p item-right class="p-card-style" style="margin-right:17px;" *ngIf="type=='published'">10 Comments</p>
+      </ion-item>
+
+      <div class="separate"></div>
+
+      <div class="follow-comment-style" *ngIf="type=='published'">
+        <ion-icon name="ios-send" style="margin-left:6vw; margin-right:2vw; font-size:22px;"></ion-icon>
+        <p>Boost</p>
+        <ion-icon name="md-create" style="margin-left:6vw; margin-right:2vw;"></ion-icon>
+        <p>Edit</p>
+        <ion-icon name="ios-paper" style="margin-left:6vw; margin-right:2vw;"></ion-icon>
+        <p>Comment</p>
+        <ion-icon name="md-share" style="margin-left:6vw; margin-right:2vw;"></ion-icon>
+        <p style="margin-right:3vw;">Share</p>
+      </div>
+
+      <div class="follow-comment-style" *ngIf="type=='draft'">
+        <img src="assets/image/quuero.png" style="width:20px;"/>
+        <p style="margin-left:2vw;">Publish</p>
+      </div>
+    </ion-card>
+  </div>
+
+
+  <div (click)="gotoMyPostDetail();">
+    <ion-card class="card-style">
+      <ion-item text-wrap>
+
+          <img item-left src="assets/image/real-estate-minimal-image-2.jpg" style="width:30vw; height:25vw;"/>
+          <ion-item style="padding:0;">
+            <ion-avatar item-left>
+              <img src="assets/image/thumbnail-rotla.png" class="avatar-style"/>
+            </ion-avatar>
+
+            <p style="color:black;">John Doe</p>
+            <div item-right class="time-location-style">
+              <p class="p-card-style">2m ago</p>
+              <ion-icon name="md-home" style="color:lightgray; font-size:20px; margin-left:10px;"></ion-icon>
+            </div>
+
+          </ion-item>
+          <span style="font-size:4.5vw;">
+            There are many variations of Pasasges of Lorem available
+          </span>
+      </ion-item>
+      <ion-item style="min-height: 20px !important;">
+        <p item-left class="p-card-style">Category1</p>
+        <p item-right class="p-card-style" style="margin-right:17px;">5 Images</p>
+        <p item-right class="p-card-style" style="margin-right:17px;" *ngIf="type=='published'">10 Comments</p>
+      </ion-item>
+
+      <div class="separate"></div>
+
+      <div class="follow-comment-style" *ngIf="type=='published'">
+        <ion-icon name="ios-stats" style="margin-left:6vw; margin-right:2vw; font-size:22px;"></ion-icon>
+        <p>Insights</p>
+        <ion-icon name="md-create" style="margin-left:6vw; margin-right:2vw;"></ion-icon>
+        <p>Edit</p>
+        <ion-icon name="ios-paper" style="margin-left:6vw; margin-right:2vw;"></ion-icon>
+        <p>Comment</p>
+        <ion-icon name="md-share" style="margin-left:6vw; margin-right:2vw;"></ion-icon>
+        <p style="margin-right:3vw;">Share</p>
+      </div>
+
+      <div class="follow-comment-style" *ngIf="type=='draft'">
+        <img src="assets/image/quuero.png" style="width:20px;"/>
+        <p style="margin-left:2vw;">Publish</p>
+      </div>
+    </ion-card>
+  </div>
+
+  <button color="primary" ion-button icon-only class="location-btn" (click)="gotoNewPost();">
+    <ion-icon name="add"></ion-icon>
+  </button>
+</ion-content>

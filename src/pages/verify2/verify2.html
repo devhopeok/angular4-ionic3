@@ -1,0 +1,35 @@
+<ion-content class="main-view">
+  <div class="overlay" (click)="dismiss(0)"></div>
+  <div class="modal_content">
+    <h2 class="login-text">Verify Phone Number</h2>
+
+    <div class="terms-text">
+      Enter it below to verify +1 234 567-8900
+    </div>
+
+    <div class="digit-div">
+      <ion-item class="edit-pro-border">
+        <ion-input type="tel" text-center class="edit_input" placeholder="" [attr.maxlength]="1"></ion-input>
+      </ion-item>
+
+      <ion-item class="edit-pro-border">
+        <ion-input type="number" text-center class="edit_input" placeholder="" [attr.maxlength]="1"></ion-input>
+      </ion-item>
+
+      <ion-item class="edit-pro-border">
+        <ion-input type="number" text-center class="edit_input" placeholder="" [attr.maxlength]="1"></ion-input>
+      </ion-item>
+
+      <ion-item class="edit-pro-border">
+        <ion-input type="number" text-center class="edit_input" placeholder="" [attr.maxlength]="1"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="login-signup-div">
+      <button ion-button style="width:85vw;">Submit</button>
+    </div>
+
+    <div class="email-text">Didn't receive SMS?</div>
+    <ion-icon name="md-close-circle" class="close-icon" (click)="dismiss(0);"></ion-icon>
+  </div>
+</ion-content>

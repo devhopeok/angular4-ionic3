@@ -1,0 +1,62 @@
+<ion-content class="main-view">
+  <div class="overlay" (click)="dismiss(0)"></div>
+  <div class="modal_content">
+    <img src="assets/image/report.png"/>
+    <ion-list radio-group>
+        <ion-item>
+          <ion-label>Threatens, harasses or bullies</ion-label>
+          <ion-radio item-left></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Encourages or incites violence</ion-label>
+          <ion-radio item-left></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Reveals personal information</ion-label>
+          <ion-radio item-left></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Impersonation</ion-label>
+          <ion-radio item-left></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Illegal content</ion-label>
+          <ion-radio item-left></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Spam</ion-label>
+          <ion-radio item-left></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Involuntary pornography</ion-label>
+          <ion-radio item-left></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Vote manipulation</ion-label>
+          <ion-radio item-left></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Breaking reddit</ion-label>
+          <ion-radio item-left></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Other</ion-label>
+          <ion-radio item-left></ion-radio>
+        </ion-item>
+    </ion-list>
+
+    <div class="login-signup-div">
+      <button ion-button style="width:85vw; margin-left:2vw;" (click)="dismiss(7);">Submit</button>
+    </div>
+    <ion-icon name="md-close-circle" class="close-icon" (click)="dismiss(0);"></ion-icon>
+  </div>
+</ion-content>

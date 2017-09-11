@@ -1,0 +1,67 @@
+page-following {
+  
+  .card-style{
+    margin: 0;
+    margin-top: 17px;
+    width: 100%;
+
+    .p-card-style{
+      margin:0; font-size:12px;
+    }
+
+    .img-style{
+      width: 90%;
+      margin-left: 5%;
+      margin-bottom: 8px;
+    }
+  }
+
+  .item-inner{
+    padding-right:0px !important;
+  }
+
+  .avatar-style{
+    width: 7vw;
+    height: 7vw;
+    border: 1px solid #00a5eb;
+  }
+
+  .time-location-style{
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .separate{
+    width: 90%;
+    height: 1px;
+    background-color: lightgray;
+    margin-left: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .follow-comment-style{
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 30px;
+  }
+
+  .location-btn{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 100;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .custom-popover{
+    width:100%;
+  }
+}

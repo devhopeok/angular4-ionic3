@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Create New Post
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="question-title-style">Question/Title</div>
+
+  <div class="title-div">
+    <ion-item>
+      <ion-input type="text" style="padding-left:10px;"></ion-input>
+    </ion-item>
+    <div style="color:gray;">0/160</div>
+  </div>
+
+  <ion-item>
+    <ion-label style="margin-left:10px;">
+      Select the Category
+    </ion-label>
+  </ion-item>
+
+  <div class="category-div">
+    <div class="current-div">
+      <ion-icon name="ios-locate-outline" style="color: lightgray;font-size: 15px;padding: 5px 10px;">Current</ion-icon>
+    </div>
+    <p style="color:white;float:left;color:#00a5eb;">Chatting</p>
+    <ion-toggle style="float:left;" color="primary"></ion-toggle>
+  </div>
+
+  <ion-item>
+    <ion-label style="margin-left:10px;">
+      Add Featured Image
+    </ion-label>
+  </ion-item>
+
+  <div class="featured-image-div">
+    <img src="assets/image/real-estate-detailed-image-3.jpg"/>
+    <div class="close-div">
+      <ion-icon name="md-close-circle" color="danger"></ion-icon>
+    </div>
+  </div>
+
+  <ion-item>
+    <ion-label style="margin-left:10px;">
+      Add More Photos
+    </ion-label>
+  </ion-item>
+
+  <div class="featured-image-div">
+    <img src="assets/image/real-estate-detailed-image-3.jpg" style="width:20vw; height:18vw;"/>
+    <div class="close-div">
+      <ion-icon name="md-close-circle" color="danger"></ion-icon>
+    </div>
+  </div>
+
+  <div class="question-title-style">Description/Add More Information</div>
+
+  <div class="title-div">
+    <ion-item>
+      <ion-input type="text" style="padding-left:10px;"></ion-input>
+    </ion-item>
+  </div>
+
+  <div class="category-div">
+    <button ion-button style="width:25vw; margin-right:2vw;" color="dark">Save</button>
+    <button ion-button style="width:25vw; margin-left:2vw;" color="dark">Preview</button>
+    <button ion-button style="width:25vw; margin-left:2vw;">Publish</button>
+  </div>
+</ion-content>

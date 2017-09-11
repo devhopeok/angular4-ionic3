@@ -1,0 +1,25 @@
+<ion-content class="main-view">
+  <div class="overlay" (click)="dismiss(0)"></div>
+  <div class="modal_content">
+    <h2 class="login-text">Verify your phone number</h2>
+
+    <div class="terms-text">
+      We will never display it publicly.
+    </div>
+    <ion-item class="edit-pro-border">
+      <ion-label stacked class="edit_label">Phone Number</ion-label>
+      <ion-label class="plus-1">+1<span style="font-size:20px; margin-left:5px; color:gray;">|</span></ion-label>
+      <ion-input type="tel" class="edit_input" placeholder="">
+      </ion-input>
+    </ion-item>
+
+    <div class="terms-text">
+      By signing up, you agree to the Quuero<br><span style="color:#00a5eb;">Terms of Services</span> and <span style="color:#00a5eb;">Privacy Policy</span>
+    </div>
+
+    <div class="login-signup-div">
+      <button ion-button style="width:85vw;" (click)="dismiss(5);">Verify</button>
+    </div>
+    <ion-icon name="md-close-circle" class="close-icon" (click)="dismiss(0);"></ion-icon>
+  </div>
+</ion-content>

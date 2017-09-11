@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Quureo</ion-title>
+
+    <ion-buttons end>
+      <ion-icon name="search" class="navbar-icon"></ion-icon>
+      <ion-icon name="ios-notifications" class="navbar-icon"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-tabs #ionTabs [scrollable-tabs]="ionTabs" [opts]="scrollableTabsopts" selectedIndex='0' color="{{tabsColor}}" mode='{{tabsMode}}'
+	tabsHighlight="true" tabsPlacement="{{tabsPlacement}}" class="scroll-tab-bar">
+        <ion-tab [root]="mainPage" tabTitle="All"></ion-tab>
+        <ion-tab [root]="mainPage" tabTitle="Category1"></ion-tab>
+        <ion-tab [root]="mainPage" tabTitle="Category2"></ion-tab>
+        <ion-tab [root]="mainPage" tabTitle="Category3"></ion-tab>
+        <ion-tab [root]="mainPage" tabTitle="Category4"></ion-tab>
+        <ion-tab [root]="mainPage" tabTitle="Category5"></ion-tab>
+        <ion-tab [root]="mainPage" tabTitle="Category6"></ion-tab>
+    </ion-tabs>
+
+</ion-content>

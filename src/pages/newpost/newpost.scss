@@ -1,0 +1,53 @@
+page-newpost {
+  .question-title-style{
+    color: gray;
+    font-size: 5vw;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .title-div{
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+  }
+
+  ion-item{
+    padding:0 !important;
+  }
+
+  .category-div{
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    height: 70px;
+    border-bottom: 1px lightgray solid;
+  }
+
+  .current-div{
+    margin-right: 36vw;
+    border: 1px lightgray solid;
+    border-radius: 7px;
+  }
+
+  .featured-image-div{
+    padding:15px;
+    position:relative;
+    border-bottom: 1px lightgray solid;
+  }
+
+  .close-div{
+    position: absolute;
+    font-size: 18px;
+    top: 5px;
+    left: 6px;
+    background-color: white;
+    border-radius: 16px;
+    justify-content: center;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+  }
+}

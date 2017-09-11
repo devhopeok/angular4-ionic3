@@ -1,0 +1,20 @@
+<ion-content class="main-view">
+  <div class="overlay" (click)="dismiss(0)"></div>
+  <div class="modal_content">
+    <h2 class="login-text">Verify Phone Number</h2>
+
+    <div class="terms-text">
+      We will send your verification<br>code to +1 234 567-8900
+    </div>
+
+    <div class="terms-text">
+      Standard SMS fee may apply
+    </div>
+
+    <div class="login-signup-div">
+      <button ion-button style="width:30vw; margin-right:2vw;" color="dark" (click)="dismiss(0);">Edit</button>
+      <button ion-button style="width:30vw; margin-left:2vw;" (click)="dismiss(6);">OK</button>
+    </div>
+    <ion-icon name="md-close-circle" class="close-icon" (click)="dismiss(0);"></ion-icon>
+  </div>
+</ion-content>

@@ -1,0 +1,17 @@
+<ion-content class="main-view">
+  <div class="overlay" (click)="dismiss(0)"></div>
+  <div class="modal_content">
+    <img src="assets/image/fb_login.png" class="fb-btn"/>
+    <img src="assets/image/login_google.png" class="google-btn"/>
+    <p class="email-text">Or use your Email Address</p>
+    <div class="login-signup-div">
+      <button ion-button style="width:30vw; margin-right:2vw;" (click)="dismiss(1);">Log In</button>
+      <button ion-button style="width:30vw; margin-left:2vw;" (click)="dismiss(2);">Sign Up</button>
+    </div>
+
+    <div class="terms-text">
+      By sigining up and logging in, you agree to the Quuero <span style="color:#00a5eb;">Terms of Services</span> and <span style="color:#00a5eb;">Privacy Policy</span>
+    </div>
+    <ion-icon name="md-close-circle" class="close-icon" (click)="dismiss();"></ion-icon>
+  </div>
+</ion-content>

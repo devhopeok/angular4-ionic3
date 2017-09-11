@@ -1,0 +1,27 @@
+<ion-content class="main-view">
+  <div class="overlay" (click)="dismiss(0)"></div>
+  <div class="modal_content">
+    <h2 class="login-text">Sign Up</h2>
+    <ion-item class="edit-pro-border">
+      <ion-label stacked class="edit_label">Name</ion-label>
+      <ion-input type="text" class="edit_input" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item class="edit-pro-border">
+      <ion-label stacked class="edit_label">Email Address</ion-label>
+      <ion-input type="text" class="edit_input" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item class="edit-pro-border">
+      <ion-label stacked class="edit_label">Password</ion-label>
+      <ion-input type="password" class="edit_input" placeholder=""></ion-input>
+    </ion-item>
+
+    <div class="terms-text">
+      By signing up, you agree to the Quuero<br><span style="color:#00a5eb;">Terms of Services</span> and <span style="color:#00a5eb;">Privacy Policy</span>
+    </div>
+
+    <div class="login-signup-div">
+      <button ion-button style="width:85vw;" (click)="dismiss(4)">Sign Up</button>
+    </div>
+    <ion-icon name="md-close-circle" class="close-icon" (click)="dismiss(0);"></ion-icon>
+  </div>
+</ion-content>

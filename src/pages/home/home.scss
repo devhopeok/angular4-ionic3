@@ -1,0 +1,21 @@
+page-home {
+  .scroll-tab-bar .tabbar{
+    background-color: #00a5eb;
+    height:65px;
+    padding-top: 13px;
+
+    .tab-button-text{
+      color:rgb(140, 205, 245);
+    }
+  }
+
+  .tabs-md .tab-button[aria-selected=true] .tab-button-text{
+    color:white !important;
+  }
+
+  .navbar-icon{
+    color: white;
+    font-size: 7vw;
+    padding: 4px;
+  }
+}

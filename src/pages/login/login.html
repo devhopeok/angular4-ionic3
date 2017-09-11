@@ -1,0 +1,26 @@
+<ion-content class="main-view">
+  <div class="overlay" (click)="dismiss(0)"></div>
+  <div class="modal_content">
+    <h2 class="login-text">Log in</h2>
+    <ion-item class="edit-pro-border">
+      <ion-label stacked class="edit_label">Email Address</ion-label>
+      <ion-input type="text" class="edit_input" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item class="edit-pro-border">
+      <ion-label stacked class="edit_label">Password</ion-label>
+      <ion-input type="password" class="edit_input" placeholder=""></ion-input>
+    </ion-item>
+
+    <div class="email-text" (click)="dismiss(3);">Forgot your password?</div>
+
+    <div class="terms-text">
+      By logging in, you agree to the Quuero<br><span style="color:#00a5eb;">Terms of Services</span> and <span style="color:#00a5eb;">Privacy Policy</span>
+    </div>
+
+    <div class="login-signup-div">
+      <button ion-button style="width:30vw; margin-right:2vw;" color="dark" (click)="dismiss(0);">Cancel</button>
+      <button ion-button style="width:30vw; margin-left:2vw;">Log In</button>
+    </div>
+    <ion-icon name="md-close-circle" class="close-icon" (click)="dismiss(0);"></ion-icon>
+  </div>
+</ion-content>

@@ -1,0 +1,151 @@
+page-post {
+  .navbar-icon{
+    color: white;
+    font-size: 7vw;
+    padding: 4px;
+  }
+
+  .gallery-div{
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    position:relative;
+  }
+
+  .gallery-img{
+    width:15%;
+    height:15%;
+    margin-left: 1%;
+  }
+
+  .count-div{
+    position:absolute;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    width:15vw;
+    height:15vw;
+    top: 0;
+    right: 2vw;
+    color: white;
+    font-size: 5vw;
+    background-color:rgba(0,0,0,0.6);
+  }
+
+  .info-div{
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+
+    .avatar-style{
+      width: 9vw !important;
+      height: 9vw !important;
+      border: 1px solid #00a5eb;
+      border-radius: 4.5vw;
+    }
+
+    .name-style{
+      margin-left: 3vw;
+      width: 60vw;
+    }
+
+    .time-style{
+      color:gray;
+    }
+  }
+
+  .category-comment-div{
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    margin-top:3vw;
+  }
+
+  .separate{
+    width: 90%;
+    height: 1px;
+    background-color: lightgray;
+    margin-left: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .follow-comment-style{
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 30px;
+  }
+
+  .card-style{
+    margin: 0;
+    width: 100%;
+    background-color:rgb(236,236,236);
+    position:relative;
+    ion-item{
+      background-color:rgb(236,236,236);
+    }
+
+    .p-card-style{
+      margin:0; font-size:12px;
+    }
+
+    .img-style{
+      width: 90%;
+      margin-left: 5%;
+      margin-bottom: 8px;
+    }
+  }
+
+  .time-location-style{
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .avatar-style{
+    border: 1px solid #00a5eb;
+  }
+
+  .vote-style{
+    color: gray;
+    font-size: 3vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+
+  .vote-style-clicked{
+    background-color: black;
+    padding: 3px 7px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    border-radius: 3vw;
+    color: white;
+    font-size: 3vw;
+  }
+
+  .return-style{
+    position: absolute;
+    top: 4vw;
+    font-size: 7vw;
+    left: 5vw;
+  }
+
+  .add-comment-style{
+    bottom:0;
+    position:fixed;
+    background-color:white;
+    width:100%;
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-top:1px solid gray;
+  }
+}

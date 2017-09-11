@@ -1,0 +1,141 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Post
+    </ion-title>
+
+    <ion-buttons end >
+      <button (click)="gotoReport($event);" style="background-color:transparent;">
+        <ion-icon name="md-more" class="navbar-icon"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <img src="assets/image/advance-card-bttf.png" style="width:100%;"/>
+
+  <div class="gallery-div">
+    <img src="assets/image/news-list-image-1.jpg" class="gallery-img"/>
+    <img src="assets/image/news-list-image-2.jpg" class="gallery-img"/>
+    <img src="assets/image/news-list-image-3.jpg" class="gallery-img"/>
+    <img src="assets/image/news-list-image-1.jpg" class="gallery-img"/>
+    <img src="assets/image/news-list-image-2.jpg" class="gallery-img"/>
+    <img src="assets/image/news-list-image-3.jpg" class="gallery-img"/>
+    <div class="count-div">+5</div>
+  </div>
+
+  <ion-item text-wrap>
+    <ion-avatar item-left>
+      <img src="assets/image/avatar-ts-buzz.png" class="avatar-style"/>
+    </ion-avatar>
+    <div>Sophia</div>
+    <div item-right class="time-location-style">
+      <p class="p-card-style">2m ago</p>
+      <ion-icon name="ios-locate-outline" style="color:lightgray; font-size:20px; margin-left:10px;"></ion-icon>
+    </div>
+  </ion-item>
+
+  <div style="width:94vw;margin-left:3vw;font-size:4.5vw;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+  <div style="width:94vw; margin-left:3vw; font-size:3.5vw; font-weight:300; margin-top:3vw;">
+    Contrary to popular belief, Lorem Ipsum is not simply random text.
+    It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
+    a Latin professor at Hamp-den-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,
+    from a Lorem Ipsum passage, and going through the cities of the word in classical literature, discovered the un-doubtable source.
+  </div>
+
+  <div class="category-comment-div">
+    <div style="width:32vw; margin-right:15vw; color:gray; font-size:3.5vw;">
+      Category 6
+    </div>
+    <div style="width:32vw; margin-left:15vw; color:gray; font-size:3.5vw; text-align:right;">
+      10 comments
+    </div>
+  </div>
+
+  <div class="separate"></div>
+
+  <div class="follow-comment-style">
+    <ion-icon name="ios-star-outline" style="margin-left:3vw; margin-right:2vw;"></ion-icon>
+    <p>Follow</p>
+    <ion-icon name="md-chatboxes" style="margin-left:6vw; margin-right:2vw;"></ion-icon>
+    <p>Chat</p>
+    <ion-icon name="ios-paper" style="margin-left:6vw; margin-right:2vw;"></ion-icon>
+    <p>Comment</p>
+    <ion-icon name="md-share" style="margin-left:6vw; margin-right:2vw;"></ion-icon>
+    <p style="margin-right:3vw;">Share</p>
+  </div>
+
+  <div>
+    <ion-card class="card-style">
+      <ion-item text-wrap>
+        <ion-avatar item-left>
+          <img src="assets/image/news-list-image-2.jpg" class="avatar-style"/>
+        </ion-avatar>
+
+        <div>Sophia</div>
+        <p>Lorem Ipsum is simple dummy text</p>
+        <div item-right class="time-location-style">
+          <p class="p-card-style">2m ago</p>
+        </div>
+      </ion-item>
+
+      <div class="follow-comment-style">
+        <div class="vote-style">Upvote 10</div>
+        <div class="vote-style">Downvote</div>
+        <div class="vote-style">Reply</div>
+      </div>
+    </ion-card>
+
+    <div>
+      <ion-card class="card-style">
+        <ion-item text-wrap>
+          <ion-avatar item-left>
+            <img src="assets/image/news-list-image-2.jpg" class="avatar-style"/>
+          </ion-avatar>
+
+          <div>Sophia</div>
+          <p>Lorem Ipsum is simple dummy text</p>
+          <div item-right class="time-location-style">
+            <p class="p-card-style">2m ago</p>
+          </div>
+        </ion-item>
+
+        <div class="follow-comment-style">
+          <div class="vote-style-clicked">Upvote 10</div>
+          <div class="vote-style">Downvote</div>
+          <div class="vote-style">Reply</div>
+        </div>
+      </ion-card>
+
+      <ion-card class="card-style" style="background-color:white; padding-left:8vw;">
+        <ion-item text-wrap style="background-color:white;">
+          <ion-avatar item-left>
+            <img src="assets/image/news-list-image-1.jpg" class="avatar-style"/>
+          </ion-avatar>
+
+          <div>John</div>
+          <p>Lorem Ipsum is simple dummy text</p>
+          <div item-right class="time-location-style">
+            <p class="p-card-style">2m ago</p>
+          </div>
+        </ion-item>
+
+        <div class="follow-comment-style">
+          <div class="vote-style">Upvote 10</div>
+          <div class="vote-style">Downvote</div>
+        </div>
+
+        <ion-icon name="ios-return-right" class="return-style"></ion-icon>
+      </ion-card>
+      </div>
+    </div>
+
+    <div style="width:100%; height:42px;"></div>
+
+    <div class="add-comment-style">
+      <ion-input type="text" class="edit_input" placeholder="Add a public comment"></ion-input>
+      <div style="width:2px; height:22px; background-color:gray; margin-left:3vw; margin-right:5vw;"></div>
+      <ion-icon name="ios-send" style="font-size:9vw; margin-right:5vw;"></ion-icon>
+    </div>
+</ion-content>
